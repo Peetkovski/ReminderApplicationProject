@@ -336,32 +336,6 @@ public class Gui extends JFrame {
     }
 
 
-    public void JOption() {
 
-
-        JFrame f = new JFrame();
-        JPanel listPane = new JPanel();
-        listPane.setLayout(new BoxLayout(listPane, BoxLayout.PAGE_AXIS));
-        JMenu menu, submenu;
-        JMenuItem i1, i2, i3, i4;
-
-
-        JMenuBar mb = new JMenuBar();
-        menu = new JMenu("Menu");
-        submenu = new JMenu("Sub Menu");
-        i1 = new JMenuItem("New Reminder");
-        i2 = new JMenuItem("Log Out");
-        i3 = new JMenuItem("Exit");
-        i4 = new JMenuItem("Refresh");
-        menu.add(i1);
-        menu.add(i2);
-        menu.add(i3);
-        menu.add(i4);
-        menu.add(submenu);
-        mb.add(menu);
-        f.setJMenuBar(mb);
-
-        f.add(listPane);
-    }
 
 }
