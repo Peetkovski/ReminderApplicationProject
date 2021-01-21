@@ -28,7 +28,7 @@ public class Gui extends JFrame {
 
 
 
-
+// Adds menu Bar
         JMenuBar mb=new JMenuBar();
         menu=new JMenu("Menu");
         submenu=new JMenu("Menu");
@@ -63,7 +63,7 @@ public class Gui extends JFrame {
 
 
 
-
+//Adds labels, passwords
 
 
         panel.setLayout(new BoxLayout(panel,BoxLayout.PAGE_AXIS));
@@ -104,7 +104,7 @@ public class Gui extends JFrame {
 
         // jFrame.add(panelLabel);
 
-
+//button to loggin
         butto2.addActionListener(e -> {
 
             String nameLogin = UserField.getText();
@@ -165,7 +165,7 @@ public class Gui extends JFrame {
 
             System.out.println(value);
             String recipient;
-//TODO WYSYLANIE MAILI DZIALA, CHYBA DZIALA
+//TODO Sending emails works
 
             Properties properties = new Properties();
 
@@ -239,7 +239,7 @@ public class Gui extends JFrame {
                             rs = st.executeQuery(sql);
                             System.out.println(rs);
 
-//TODO DODAJ ZMIANE HASLA I NAPRAW TEN SYF
+//TODO Repair "change password"
                         }
                         else
                         {
@@ -262,7 +262,7 @@ public class Gui extends JFrame {
         });
         i4.addActionListener(e -> {
 
-                    //TODO TU JEST REJESTROWANIE DO SQL'A
+                    //TODO Registration to MYSQL
                     JTextField xField = new JTextField(14);
                     JTextField eField = new JTextField(14);
                     JTextField yField = new JTextField(14);
@@ -320,7 +320,7 @@ public class Gui extends JFrame {
 
     private static Message prepareMessage(Session session, String myAccountEmail) {
 
-//TODO WYSYLANIE MAILA TRESC
+//TODO Sending emails content
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));

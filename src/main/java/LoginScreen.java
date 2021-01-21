@@ -52,7 +52,7 @@ public class LoginScreen extends JFrame{
         i1.addActionListener(e -> {
 
 
-            //TODO NAPRAW POJAWIJACY SIE PRZYCISK
+            //TODO Repaired
 
 
             String Joption =   JOptionPane.showInputDialog("Podaj nazwę przypomnienia");
@@ -117,7 +117,7 @@ public class LoginScreen extends JFrame{
 
 
         i4.addActionListener(e -> {
-//TODO NAPRAW WYCHODZENIE Z JOPTION
+//TODO Repair exiting
 
             jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
