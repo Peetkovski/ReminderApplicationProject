@@ -174,8 +174,8 @@ public class Gui extends JFrame {
             properties.put("mail.smtp.host", "smtp.gmail.com");
             properties.put("mail.smtp.port", "587");
 
-            String myAccountEmail = "reminderproject02@gmail.com";
-            String passwordEmail = "Rem!nderProjectJava665";
+            String myAccountEmail = "";
+            String passwordEmail = "";
 
             Session session = Session.getInstance(properties, new Authenticator() {
                 @Override
